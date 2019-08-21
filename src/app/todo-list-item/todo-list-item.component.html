@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="col-md-4">
+          <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
+          <label>{{todo.title}}</label>
+        </div>
+      <div class="col-md-2">
+        <button class="btn btn-danger" (click)="removeTodo(todo)">delete</button>
+        </div>
+      </div>
+</div>
